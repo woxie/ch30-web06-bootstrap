@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="name">Hola nombre</h1>
+    <button onclick="changeName()">Cambiar el nombre</button>
+    <script>
+        function changeName() {
+           const name = prompt("¿Cuál es tu nombre?");
+           modifyText(name);
+        }
+        function modifyText(name){
+            const text = document.getElementById("name");
+            text.innerText = "Hola " + name;
+
+        }
+    </script>
+</body>
+</html>
